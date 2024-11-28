@@ -1,0 +1,58 @@
+#title {
+  font-size: 55px;
+  color: darkgrey;
+}
+
+.wikipedia-paragraph {
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.paragraph-italic-text {
+  font-style: italic;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  background-color: beige;
+  color: darkorchid;
+}
+
+.first-paragraph {
+  color: rgb(134, 5, 128);
+  background-color: rgb(173, 173, 85);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.second-paragraph {
+  background-color: rgb(223, 148, 79);
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: blue;
+}
+
+h2 {
+  color: rgb(204, 6, 6);
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(164, 213, 214);
+}
+
+.etymology-paragraphs {
+  background-color: lightgreen;
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(214, 64, 4);
+}
+
+.taxonomy-paragraph {
+  text-decoration: overline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(202, 26, 114);
+  background-color: rgb(247, 197, 181);
+}
