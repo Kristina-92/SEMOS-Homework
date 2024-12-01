@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>УЈП ГОДИШНА ДАНОЧНА ПРИЈАВА</title>
+    
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <th width="250">
+          <img src="./ujp_logo.png" width="250" height="95" align="left" />
+        </th>
+        <th>
+          <h1 align="center">
+            ГОДИШНА ДАНОЧНА ПРИЈАВА <br />за утврдување на данокот на личен
+            доход
+          </h1>
+        </th>
+        <th width="150">
+          <h1 style="background-color: rgba(117, 5, 117, 0.397); color: white">
+            ДЛД-ГДП
+          </h1>
+        </th>
+      </tr>
+    </table>
+    <hr />
+    <br />
+
+    <form action="/submit" method="POST">
+    <table width="100%" >
+      <tr>
+        <td>
+            <label for="embg" style="float: left; width: 145px">ЕМБГ</label>
+            <input type="text" id="embg" name="embg" size="64" />
+        </td>
+        <td rowspan="2" style="background-color: rgba(117, 5, 117, 0.397)">          
+            <label for="datum-broj">Датум и број</label>
+            <textarea
+              id="datum-broj"
+              name="datum-broj"
+              rows="8"
+              cols="60"
+              style="vertical-align: middle"
+            ></textarea>         
+        </td>
+      </tr>
+      <tr>
+        <td>         
+            <label
+              for="ime-prezime-adresa"
+              style="float: left; width: 145px; padding-top: 30px"
+              >Име и презиме <br />и адреса на живеење <br />за контакт</label
+            >
+            <textarea
+              id="ime-prezime-adresa"
+              name="ime-prezime-adresa"
+              rows="8"
+              cols="60"
+              style="vertical-align: middle"
+            ></textarea>          
+        </td>
+      </tr>
+      <tr>
+        <td> 
+          <label
+            for="phonenumber"
+            style="float: left; width: 145px;"
+            >Телефон</label>          
+          <input type="text" id="phonenumber" name="phonenumber" size="64" />
+        </td>
+        <td>         
+          <p style="text-align: center;">Даночен период</p>
+          <label for="period-od">од</label>
+          <input type="date" id="period-od" name="period-od" />
+          <label for="period-do">до</label>
+          <input type="date" id="period-do" name="period-do" />
+          <br/>        
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="5">          
+          <label for="email" style="float: left; width: 145px"
+          >е-пошта</label
+          >
+          <input type="email" id="email" name="email" size="64" />        
+        </td>
+      </tr>
+      <tr>
+        <td>          
+          <label for="datum-na-izdavanje" style="float: left; width: 145px">Датум на издавање</label>
+            <input type="date" id="datum-na-izdavanje" name="datum-na-izdavanje"/>          
+        </td>
+      </tr>
+      <tr>
+        <td>          
+            <label for="rok-za-potvrduvanje" style="float: left; width: 145px">Рок за потврдување</label>
+            <input type="text" id="rok-za-potvrduvanje" name="rok-za-potvrduvanje" size="55"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <label for="folio-broj" style="float: left; width: 145px">Фолио број</label>
+            <input type="text" id="folio-broj" name="folio-broj" size="55"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <label for="sluzbena-ispravka" style="float: left; width: 145px">Службена исправка</label>
+            <input type="text" id="sluzbena-ispravka" name="sluzbena-ispravka" size="1"/>
+        </td>
+      </tr>
+    </table>
+  </form>
+  
+<br/>
+<br/>
+    <p><b>За корекција на пополнетите податоци внесете ги точните износи во празните полиња под податоците пополнети од Управата за јавни
+      приходи, а во спротивно оставете ги непополнети.</b></p>
+      <br/>
+    
+    <form action="/submit" method="POST">
+      <fieldset>
+        <legend><b>ОСТВАРЕН ДОХОД</b></legend>
+        <table width="100%">
+          <tr>
+            <th width="650">Вид на остварен доход</th>
+            <th width="200">Бруто износ <br/>на доход </th>
+            <th width="200"> Вкупен износ на <br/>платени <br/> придонеси/<br/>признаeни трошоци</th>
+            <th width="200"> Вкупен износ на<br/> пресметан ДЛД</th>
+            <th width="200">Вкупен износ на <br/>платен ДЛД</th>
+          </tr>
+          <tr>
+            <td colspan="5"><ol><li><b>Доход од работа</b></li></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><ol><li>1. Плата и надоместоци на плата од работен однос и исплата<br/>
+              по основ на деловна успешност на работодавачот</li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="plata-nadomestoci-bruto-1" name="plata-nadomestoci-bruto-1" aria-label="Plata i nadomestoci pole 1"/></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="plata-nadomestoci-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="plata-nadomestoci-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Plata i nadomestoci pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">              
+              <input type="text" id="plata-nadomestoci-vkupno-presemtan-dld-1" name="plata-nadomestoci-vkupno-presemtan-dld-1" aria-label="Plata i nadomestoci pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="plata-nadomestoci-vkupno-platen-dld-1" name="plata-nadomestoci-vkupno-platen-dld-1" aria-label="Plata i nadomestoci pole 4"/></td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="plata-nadomestoci-bruto-2" name="plata-nadomestoci-bruto-2" aria-label="Plata i nadomestoci pole 5"/></td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="plata-nadomestoci-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="plata-nadomestoci-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Plata i nadomestoci pole 6"/></td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="plata-nadomestoci-vkupno-presemtan-dld-2" name="plata-nadomestoci-vkupno-presemtan-dld-2" aria-label="Plata i nadomestoci pole 7"/></td>
+            <td style="vertical-align:baseline;">              
+              <input type="text" id="plata-nadomestoci-vkupno-platen-dld-2" name="plata-nadomestoci-vkupno-platen-dld-2" aria-label="Plata i nadomestoci pole 8"/></td>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol><li>2. Пензии</li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="penzii-bruto-1" name="penzii-bruto-1" aria-label="Penzii pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="penzii-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="penzii-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Penzii pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="penzii-vkupno-presemtan-dld-1" name="penzii-vkupno-presemtan-dld-1" aria-label="Penzii pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="penzii-vkupno-platen-dld-1" name="penzii-vkupno-platen-dld-1" aria-label="Penzii pole 4"/></td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="penzii-bruto-2" name="penzii-bruto-2" aria-label="Penzii pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="penzii-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="penzii-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Penzii pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="penzii-vkupno-presemtan-dld-2" name="penzii-vkupno-presemtan-dld-2" aria-label="Penzii pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="penzii-vkupno-platen-dld-2" name="penzii-vkupno-platen-dld-2" aria-label="Penzii pole 8"/>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2"><ol><li>3. Друг доход од работа <small>(од работен однос, регрес за годишен одмор, од органите
+              на управување и надзор, на функционери, пратеници, советници, носители на јавни
+              функции, судии поротници, вешти лица, стечајни управници, членови на МАНУ,
+              спортисти, практична обука, пензиски надоместок, придонес во доброволен пензиски фонд,
+              практиканска работа и договор за повремено или привремено вршење на услуги)</small></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-rabota-bruto-1" name="drug-dohod-rabota-bruto-1" aria-label="Drug dohod od rabota pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-rabota-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="drug-dohod-rabota-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Drug dohod od rabota pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-rabota-vkupno-presemtan-dld-1" name="drug-dohod-rabota-vkupno-presemtan-dld-1" aria-label="Drug dohod od rabota pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-rabota-vkupno-platen-dld-1" name="drug-dohod-rabota-vkupno-platen-dld-1" aria-label="Drug dohod od rabota pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-rabota-bruto-2" name="drug-dohod-rabota-bruto-2" aria-label="Drug dohod od rabota pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-rabota-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="drug-dohod-rabota-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Drug dohod od rabota pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-rabota-vkupno-presemtan-dld-2" name="drug-dohod-rabota-vkupno-presemtan-dld-2" aria-label="Drug dohod od rabota pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-rabota-vkupno-platen-dld-2" name="drug-dohod-rabota-vkupno-platen-dld-2" aria-label="Drug dohod od rabota pole 8"/>
+            </td>
+          </tr>
+      
+
+          <tr>
+            <td rowspan="2"><ol start="2"><li><b>Доход од самостојна дејност</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-samostojna-dejnost-bruto-1" name="dohod-samostojna-dejnost-bruto-1" aria-label="Dohod samostojna dejnost pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-samostojna-dejnost-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-samostojna-dejnost-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod samostojna dejnost pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-samostojna-dejnost-vkupno-presemtan-dld-1" name="dohod-samostojna-dejnost-vkupno-presemtan-dld-1" aria-label="Dohod samostojna dejnost pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-samostojna-dejnost-vkupno-platen-dld-1" name="dohod-samostojna-dejnost-vkupno-platen-dld-1" aria-label="Dohod samostojna dejnost pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-samostojna-dejnost-bruto-2" name="dohod-samostojna-dejnost-bruto-2" aria-label="Dohod samostojna dejnost pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-samostojna-dejnost-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-samostojna-dejnost-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod samostojna dejnost pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-samostojna-dejnost-vkupno-presemtan-dld-2" name="dohod-samostojna-dejnost-vkupno-presemtan-dld-2" aria-label="Dohod samostojna dejnost pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-samostojna-dejnost-vkupno-platen-dld-2" name="dohod-samostojna-dejnost-vkupno-platen-dld-2" aria-label="Dohod samostojna dejnost pole 8"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol start="3"><li><b>Доход од авторски и сродни права</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-avtorski-prava-bruto-1" name="dohod-avtorski-prava-bruto-1"  aria-label="Dohod od avtorski srodni prava pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-avtorski-prava-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-avtorski-prava-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod od avtorski srodni prava pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-avtorski-prava-vkupno-presemtan-dld-1" name="dohod-avtorski-prava-vkupno-presemtan-dld-1" aria-label="Dohod od avtorski srodni prava pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-avtorski-prava-vkupno-platen-dld-1" name="dohod-avtorski-prava-vkupno-platen-dld-1" aria-label="Dohod od avtorski srodni prava pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-avtorski-prava-bruto-2" name="dohod-avtorski-prava-bruto-2"  aria-label="Dohod od avtorski srodni prava pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-avtorski-prava-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-avtorski-prava-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod od avtorski srodni prava pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-avtorski-prava-vkupno-presemtan-dld-2" name="dohod-avtorski-prava-vkupno-presemtan-dld-2" aria-label="Dohod od avtorski srodni prava pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-avtorski-prava-vkupno-platen-dld-2" name="dohod-avtorski-prava-vkupno-platen-dld-2" aria-label="Dohod od avtorski srodni prava pole 8"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol start="4"><li><b>Доход од продажба на сопствени земјоделски производи</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-bruto-1" name="dohod-prodazba-zemjodelski-proizvodi-bruto-1"  aria-label="Dohod od prodazba zemjodelski proizvodi pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod od prodazba zemjodelski proizvodi pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-vkupno-presemtan-dld-1" name="dohod-prodazba-zemjodelski-proizvodi-vkupno-presemtan-dld-1" aria-label="Dohod od prodazba zemjodelski proizvodi pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-vkupno-platen-dld-1" name="dohod-prodazba-zemjodelski-proizvodi-vkupno-platen-dld-1" aria-label="Dohod od prodazba zemjodelski proizvodi pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-bruto-2" name="dohod-prodazba-zemjodelski-proizvodi-bruto-2"  aria-label="Dohod od prodazba zemjodelski proizvodi pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod od prodazba zemjodelski proizvodi pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-vkupno-presemtan-dld-2" name="dohod-prodazba-zemjodelski-proizvodi-vkupno-presemtan-dld-2" aria-label="Dohod od prodazba zemjodelski proizvodi pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-vkupno-platen-dld-2" name="dohod-prodazba-zemjodelski-proizvodi-vkupno-platen-dld-2" aria-label="Dohod od prodazba zemjodelski proizvodi pole 8"/>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol start="5"><li><b>Доход од права од индустриска сопственост</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-industriska-sopstvenost-bruto-1" name="dohod-industriska-sopstvenost-bruto-1"  aria-label="Dohod od prava industriska sopstvenost pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod od prava industriska sopstvenost pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-industriska-sopstvenost-vkupno-presemtan-dld-1" name="dohod-industriska-sopstvenost-vkupno-presemtan-dld-1" aria-label="Dohod od prava industriska sopstvenost pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-industriska-sopstvenost-vkupno-platen-dld-1" name="dohod-industriska-sopstvenost-vkupno-platen-dld-1" aria-label="Dohod od prava industriska sopstvenost pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-industriska-sopstvenost-bruto-2" name="dohod-industriska-sopstvenost-bruto-2"  aria-label="Dohod od prava industriska sopstvenost pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-prodazba-zemjodelski-proizvodi-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod od prava industriska sopstvenost pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-industriska-sopstvenost-vkupno-presemtan-dld-2" name="dohod-industriska-sopstvenost-vkupno-presemtan-dld-2" aria-label="Dohod od prava industriska sopstvenost pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-industriska-sopstvenost-vkupno-platen-dld-2" name="dohod-industriska-sopstvenost-vkupno-platen-dld-2" aria-label="Dohod od prava industriska sopstvenost pole 8"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol start="6"><li><b>Доход од закуп и подзакуп</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-zakup-podzakup-bruto-1" name="dohod-zakup-podzakup-bruto-1" aria-label="Dohod od zakup i podzakup pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-zakup-podzakup-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-zakup-podzakup-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod od zakup i podzakup pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-zakup-podzakup-vkupno-presemtan-dld-1" name="dohod-zakup-podzakup-vkupno-presemtan-dld-1" aria-label="Dohod od zakup i podzakup pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-zakup-podzakup-vkupno-platen-dld-1" name="dohod-zakup-podzakup-vkupno-platen-dld-1" aria-label="Dohod od zakup i podzakup pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-zakup-podzakup-bruto-2" name="dohod-zakup-podzakup-bruto-2" aria-label="Dohod od zakup i podzakup pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-zakup-podzakup-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-zakup-podzakup-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod od zakup i podzakup pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-zakup-podzakup-vkupno-presemtan-dld-2" name="dohod-zakup-podzakup-vkupno-presemtan-dld-2" aria-label="Dohod od zakup i podzakup pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-zakup-podzakup-vkupno-platen-dld-2" name="dohod-zakup-podzakup-vkupno-platen-dld-2" aria-label="Dohod od zakup i podzakup pole 8"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol start="7"><li><b>Доход од капитал <small> (дивиденди и друг доход остварен со учество во
+              добивката кај правни лица, камати од заеми и камати од хартии од вредност и
+              друг доход од хартии од вредност или финансиски инструменти)</small></b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-kapital-bruto-1" name="dohod-kapital-bruto-1" aria-label="Dohod od kapital pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-kapital-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-kapital-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod od kapital pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-kapital-vkupno-presemtan-dld-1" name="dohod-kapital-vkupno-presemtan-dld-1" aria-label="Dohod od kapital pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-kapital-vkupno-platen-dld-1" name="dohod-kapital-vkupno-platen-dld-1" aria-label="Dohod od kapital pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-kapital-bruto-2" name="dohod-kapital-bruto-2" aria-label="Dohod od kapital pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-kapital-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-kapital-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod od kapital pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-kapital-vkupno-presemtan-dld-2" name="dohod-kapital-vkupno-presemtan-dld-2" aria-label="Dohod od kapital pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-kapital-vkupno-platen-dld-2" name="dohod-kapital-vkupno-platen-dld-2" aria-label="Dohod od kapital pole 8"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td rowspan="2"><ol start="8"><li><b>Капитални добивки <small> (остварени од продажба или размена на недвижен
+              имот, хартии од вредност, учество во капиталот, друг подвижен и
+              нематеријален имот)</small></b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="kapitalni-dobivki-bruto-1" name="kapitalni-dobivki-bruto-1" aria-label="Kapitalni dobivki pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="kapitalni-dobivki-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="kapitalni-dobivki-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Kapitalni dobivki pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="kapitalni-dobivki-vkupno-presemtan-dld-1" name="kapitalni-dobivki-vkupno-presemtan-dld-1" aria-label="Kapitalni dobivki pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="kapitalni-dobivki-vkupno-platen-dld-1" name="kapitalni-dobivki-vkupno-platen-dld-1" aria-label="Kapitalni dobivki pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="kapitalni-dobivki-bruto-2" name="kapitalni-dobivki-bruto-2" aria-label="Kapitalni dobivki pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="kapitalni-dobivki-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="kapitalni-dobivki-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Kapitalni dobivki pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="kapitalni-dobivki-vkupno-presemtan-dld-2" name="kapitalni-dobivki-vkupno-presemtan-dld-2" aria-label="Kapitalni dobivki pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="kapitalni-dobivki-vkupno-platen-dld-2" name="kapitalni-dobivki-vkupno-platen-dld-2" aria-label="Kapitalni dobivki pole 8"/>
+            </td>
+          </tr>  
+
+          <tr>
+            <td rowspan="2"><ol start="9"><li><b>Добивки од игри на среќа</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dobivki-igri-sreka-bruto-1" name="dobivki-igri-sreka-bruto-1" aria-label="Dobivki igri na sreka pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dobivki-igri-sreka-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dobivki-igri-sreka-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dobivki igri na sreka pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dobivki-igri-sreka-vkupno-presemtan-dld-1" name="dobivki-igri-sreka-vkupno-presemtan-dld-1" aria-label="Dobivki igri na sreka pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dobivki-igri-sreka-vkupno-platen-dld-1" name="dobivki-igri-sreka-vkupno-platen-dld-1" aria-label="Dobivki igri na sreka pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dobivki-igri-sreka-bruto-2" name="dobivki-igri-sreka-bruto-2" aria-label="Dobivki igri na sreka pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dobivki-igri-sreka-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dobivki-igri-sreka-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dobivki igri na sreka pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dobivki-igri-sreka-vkupno-presemtan-dld-2" name="dobivki-igri-sreka-vkupno-presemtan-dld-2" aria-label="Dobivki igri na sreka pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dobivki-igri-sreka-vkupno-platen-dld-2" name="dobivki-igri-sreka-vkupno-platen-dld-2" aria-label="Dobivki igri na sreka pole 8"/>
+            </td>
+          </tr> 
+          <tr>
+            <td rowspan="2"><ol start="10"><li><b>Доход од осигурување</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-osiguruvanje-bruto-1" name="dohod-osiguruvanje-bruto-1" aria-label="Dohod od osiguruvanje pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-osiguruvanje-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="dohod-osiguruvanje-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Dohod od osiguruvanje pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-osiguruvanje-vkupno-presemtan-dld-1" name="dohod-osiguruvanje-vkupno-presemtan-dld-1" aria-label="Dohod od osiguruvanje pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="dohod-osiguruvanje-vkupno-platen-dld-1" name="dohod-osiguruvanje-vkupno-platen-dld-1" aria-label="Dohod od osiguruvanje pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-osiguruvanje-bruto-2" name="dohod-osiguruvanje-bruto-2" aria-label="Dohod od osiguruvanje pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-osiguruvanje-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="dohod-osiguruvanje-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Dohod od osiguruvanje pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-osiguruvanje-vkupno-presemtan-dld-2" name="dohod-osiguruvanje-vkupno-presemtan-dld-2" aria-label="Dohod od osiguruvanje pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="dohod-osiguruvanje-vkupno-platen-dld-2" name="dohod-osiguruvanje-vkupno-platen-dld-2" aria-label="Dohod od osiguruvanje pole 8"/>
+            </td>
+          </tr> 
+          <tr>
+            <td rowspan="2"><ol start="11"><li><b>Друг доход</b></li></ol></td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-bruto-1" name="drug-dohod-bruto-1" aria-label="Drug dohod pole 1"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-plateni-pridonesi-priznaeni-trosoci-vkupno-1" name="drug-dohod-plateni-pridonesi-priznaeni-trosoci-vkupno-1" aria-label="Drug dohod pole 2"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-vkupno-presemtan-dld-1" name="drug-dohod-vkupno-presemtan-dld-1" aria-label="Drug dohod pole 3"/>
+            </td>
+            <td style="vertical-align:bottom;">
+              <input type="text" id="drug-dohod-vkupno-platen-dld-1" name="drug-dohod-vkupno-platen-dld-1" aria-label="Drug dohod pole 4"/>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-bruto-2" name="drug-dohod-bruto-2" aria-label="Drug dohod pole 5"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-plateni-pridonesi-priznaeni-trosoci-vkupno-2" name="drug-dohod-plateni-pridonesi-priznaeni-trosoci-vkupno-2" aria-label="Drug dohod pole 6"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-vkupno-presemtan-dld-2" name="drug-dohod-vkupno-presemtan-dld-2" aria-label="Drug dohod pole 7"/>
+            </td>
+            <td style="vertical-align:baseline;">
+              <input type="text" id="drug-dohod-vkupno-platen-dld-2" name="drug-dohod-vkupno-platen-dld-2" aria-label="Drug dohod pole 8"/>
+            </td>
+          </tr> 
+          <tr>
+            <td rowspan="2"><ol start="12"><li><b>ВКУПНО</b></li></ol></td>
+            <td style="vertical-align:center;">
+              <input type="text" id="vkupno-bruto" name="vkupno-bruto" aria-label="Vkupno pole 1">
+            </td>
+            <td style="vertical-align:center;">
+              <input type="text" id="vkupno-plateni-pridonesi-priznaeni-trosoci-vkupno" name="vkupno-plateni-pridonesi-priznaeni-trosoci-vkupno" aria-label="Vkupno pole 2"/>
+            </td>
+            <td style="vertical-align:center;">
+              <input type="text" id="vkupno-presemtan-dld" name="vkupno-presemtan-dld" aria-label="Vkupno pole 3"/>
+            </td>
+            <td style="vertical-align:center;">
+              <input type="text" id="vkupno-platen-dld" name="vkupno-platen-dld" aria-label="Vkupno pole 4"/>
+            </td>
+          </tr>
+        </table>
+      </fieldset>  
+    </form>
+
+    <form action="/submit" method="POST">
+      <table width="100%">
+        <tr>
+          <td style="width:985px">
+              <ol start="13" style="margin-left: 15px"><li><b>ИЗНОС НА ДОНИРАНИ ФИНАНСИСКИ СРЕДСТВА</b></li></ol>
+          </td>
+          <td>            
+            <input type="text" id="iznos-donirani-sredstva-1" name="iznos-donirani-sredstva-1" size="64" aria-label="Iznos donirani sredstva pole 1"/><br/>
+            <input type="text" id="iznos-donirani-sredstva-2" name="iznos-donirani-sredstva-2" size="64" aria-label="Iznos donirani sredstva pole 2"/>
+          </td>
+        </tr>
+    </table>
+  </form>
+    <br/>
+    <br/>
+
+  <form action="/submit" method="POST">
+      <fieldset>
+        <legend><b>УТВРДЕН ГОДИШЕН ДАНОК НА ЛИЧЕН ДОХОД</b></legend>
+        <table width="100%">
+          <tr>
+            <td style="width:1250px"><ol><label for="vkupen-iznos-ostvaren-dohod"><li><b>Вкупен износ на остварен доход</b></li></label></ol></td>
+            <td style="width:500px"><input type="text" id="vkupen-iznos-ostvaren-dohod" name="vkupen-iznos-ostvaren-dohod" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="2"><label for="vkupen-iznos-odbitoci"><li><b>Вкупен износ на одбитоци</b></li></label></ol></td>
+            <td><input type="text" id="vkupen-iznos-odbitoci" name="vkupen-iznos-odbitoci" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="plateni-pridonesi"><li>Платени придонеси</li></label></ul></td>
+            <td><input type="text" id="plateni-pridonesi" name="plateni-pridonesi" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="priznaeni-trosoci"><li>Признаeни трошоци</li></label></ul></td>
+            <td><input type="text" id="priznaeni-trosoci" name="priznaeni-trosoci" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="3"><label for="danocno-namaluvanje-akontativno"><li><b>Искористеното даночно намалување при аконтативно оданочување</b></li></label></ol></td>
+            <td><input type="text" id="danocno-namaluvanje-akontativno" name="danocno-namaluvanje-akontativno" size="64"></td>
+          </tr>  
+          <tr>
+            <td><ol start="4"><label for="osnova-odanocuvanje"><li><b>Основа за оданочување 4 = 1 - (2 + 3)</b></li></label></ol></td>
+            <td><input type="text" id="osnova-odanocuvanje" name="osnova-odanocuvanje" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="danocna-osnova-danocna-stapka-10%"><li>Даночна основа за примена на даночна стапка од 10%</li></label></ul></td>
+            <td><input type="text" id="danocna-osnova-danocna-stapka-10%" name="danocna-osnova-danocna-stapka-10%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="danocna-osnova-danocna-stapka-15%"><li>Даночна основа за примена на даночна стапка од 15%</li></label></ul></td>
+            <td><input type="text" id="danocna-osnova-danocna-stapka-15%" name="danocna-osnova-danocna-stapka-15%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="danocna-osnova-danocna-stapka-18%"><li>Даночна основа за примена на даночна стапка од 18%</li></label></ul></td>
+            <td><input type="text" id="danocna-osnova-danocna-stapka-18%" name="danocna-osnova-danocna-stapka-18%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="5"><label for="godisen-danok-licen-dohod"><li><b>Вкупно пресметан годишен данок на личен доход</b></li></label></ol></td>
+            <td><input type="text" id="godisen-danok-licen-dohod" name="godisen-danok-licen-dohod" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="godisen-danok-licen-dohod-danocna-stapka-10%"><li>Даночна основа за примена на даночна стапка од 10%</li></label></ul></td>
+            <td><input type="text" id="godisen-danok-licen-dohod-danocna-stapka-10%" name="godisen-danok-licen-dohod-danocna-stapka-10%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="godisen-danok-licen-dohod-danocna-stapka-15%"><li>Даночна основа за примена на даночна стапка од 15%</li></label></ul></td>
+            <td><input type="text" id="godisen-danok-licen-dohod-danocna-stapka-15%" name="godisen-danok-licen-dohod-danocna-stapka-15%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ul><label for="godisen-danok-licen-dohod-danocna-stapka-18%"><li>Даночна основа за примена на даночна стапка од 18%</li></label></ul></td>
+            <td><input type="text" id="godisen-danok-licen-dohod-danocna-stapka-18%" name="godisen-danok-licen-dohod-danocna-stapka-18%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="6"><label for="danocno-osloboduvanje-donacii-20%"><li><b>Даночно ослободување по основ на донации во висина од 20% од годишниот даночен долг, но не повеќе од 24.000 денари</b></li></label></ol></td>
+            <td><input type="text" id="danocno-osloboduvanje-donacii-20%" name="danocno-osloboduvanje-donacii-20%" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="7"><label for="namaluvanje-danok-licen-dohod-drugi-osnovi"><li><b>Намалување на данокот на личен доход по други основи</b></li></label></ol></td>
+            <td><input type="text" id="namaluvanje-danok-licen-dohod-drugi-osnovi" name="namaluvanje-danok-licen-dohod-drugi-osnovi" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="8"><label for="godisen-danok-za-plakanje-presmetan"><li><b>Пресметан годишен данок за плаќање 8=5-(6+7)</b></li></label></ol></td>
+            <td><input type="text" id="godisen-danok-za-plakanje-presmetan" name="godisen-danok-za-plakanje-presmetan" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="9"><label for="efektivna-stapka-dld"><li><b>Ефективна стапка на ДЛД 9=5/1</b></li></label></ol></td>
+            <td><input type="text" id="efektivna-stapka-dld" name="efektivna-stapka-dld" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="10"><label for="vkupen-iznos-platen-danok-licen-dohod"><li><b>Вкупен износ на платен данок на личен доход во текот на годината</b></li></label></ol></td>
+            <td><input type="text" id="vkupen-iznos-platen-danok-licen-dohod" name="vkupen-iznos-platen-danok-licen-dohod" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="11"><label for="razlika-doplata-danok-licen-dohod"><li><b>Разлика за доплата на данок на личен доход 11=5-10</b></li></label></ol></td>
+            <td><input type="text" id="razlika-doplata-danok-licen-dohod" name="razlika-doplata-danok-licen-dohod" size="64"></td>
+          </tr>
+          <tr>
+            <td><ol start="12"><label for="poveke-platen-danok-licen-dohod"><li><b>Повеќе платен данок на личен доход</b></li></label></ol></td>
+            <td>
+              <input type="checkbox" id="poveke-platen-danok-licen-dohod" name="poveke-platen-danok-licen-dohod">
+              <input type="text" id="poveke-platen-danok-licen-dohod-iznos" name="poveke-platen-danok-licen-dohod-iznos" size="61" aria-label="Iznos na poveke platen danok na licen dohod"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="transakciska-smetka">Трансакциска сметка</label>
+            <input type="text" id="transakciska-smetka" name="transakciska-smetka" size="83"/>
+            <label for="naziv-banka">Назив на банка</label>
+            <input type="text" id="naziv-banka" name="naziv-banka" size="83"/></td>
+          </tr>
+        </table>
+      </fieldset>  
+    </form> 
+    <br/>
+    <form action="/submit" method="POST">
+      <fieldset>
+        <legend><b>ПОТВРДА НА ГОДИШНА ДАНОЧНА ПРИЈАВА</b></legend>
+          <input type="checkbox" id="potvrda" name="potvrda">
+          <label for="potvrda"><b>ПОТВРДУВАМ</b><small> дека податоците во годишната даночна пријава целосно се совпаѓаат со остварениот вкупен доход, износот на искористените
+              одбитоци и платените аконтации на данокот на личен доход, во наведениот даночен период (календарска година).</small></label>
+          <br/>
+          <input type="checkbox" id="korekcija" name="korekcija">
+          <label for="korekcija"><b>КОРИГИРАМ</b><small> податоци во годишната даночна пријава кои не се совпаѓаат со остварениот вкупен доход, износот на искористените одбитоци
+          и платените аконтации на данокот на личен доход, во наведениот даночен период (календарска година).</small></label>   
+      </fieldset>  
+    </form> 
+    <br/>
+    
+    <form action="/submit" method="POST">
+      <fieldset>
+        <legend><b>ПОТВРДИЛ/КОРИГИРАЛ</b></legend>
+        <table width="100%">
+          <tr>
+            <td colspan="2">
+              <label for="naziv">Назив /<br/> Име и презиме</label>
+              <input type="text" id="naziv" name="naziv" size="155">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="edb-embg">ЕДБ / ЕМБГ</label>
+              <input type="text" id="edb-embg" name="edb-embg" size="46">
+            </td>
+            <td>
+              <label for="datum-na-popolnuvanje">Датум на
+                пополнување</label>
+              <input type="date" id="datum-na-popolnuvanje" name="datum-na-popolnuvanje" >
+            </td>
+          </tr>
+          <tr>
+            <td >
+              <label for="svojstvo">Својство</label>
+              <input type="text" id="svojstvo" name="svojstvo" size="50">
+            </td>
+            <td>
+              <label for="potpis">Потпис</label>
+              <input type="text" id="potpis" name="potpis" size="50" >
+            </td>
+          </tr>                      
+        </table>
+      </fieldset>  
+    </form> 
+    <br/>
+    <form action="/submit" method="POST">
+      <fieldset>
+        <legend><b>ПОДАТОЦИ ЗА ПОТПИСНИКОТ</b></legend>
+        <table width="100%">
+          <tr>
+            <td colspan="2">
+              <label for="ime-prezime-potpisnik">Име и презиме</label>
+              <input type="text" id="ime-prezime-potpisnik" name="ime-prezime-potpisnik" size="155">
+            </td>
+          </tr>
+          <tr>
+            <td width="750px">
+              <label for="embg-potpisnik">ЕМБГ</label>
+              <input type="text" id="embg-potpisnik" name="embg-potpisnik" size="53">
+            </td>
+            <td>
+              <label for="datum-na-popolnuvanje-potpisnik">Датум на
+                пополнување</label>
+              <input type="date" id="datum-na-popolnuvanje-potpisnik" name="datum-na-popolnuvanje-potpisnik">
+            </td>
+          </tr>
+          <tr>
+            <td width="750px">
+              <label for="svojstvo-potpisnik">Својство</label>
+              <input type="text" id="svojstvo-potpisnik" name="svojstvo-potpisnik" size="50">
+            </td>
+            <td>
+              <label for="potpis-potpisnik">Потпис</label>
+              <input type="text" id="potpis-potpisnik" name="potpis-potpisnik" size="50" >
+            </td>
+          </tr>                      
+        </table>
+      </fieldset>  
+    </form>
+    
+    <br/>
+    <br/>
+    <table width="100%">
+      <tr>
+        <th width="200"></th>
+        <th>
+          <h1 align="center">УПАТСТВО ЗА ПОПОЛНУВАЊЕ</h1>
+        </th>
+        <th width="150">
+          <h1 style="background-color: rgba(117, 5, 117, 0.397); color: white">
+            ДЛД-ГДП
+          </h1>
+        </th>
+      </tr>  
+    </table>
+    
+    <hr/>
+
+    <p>Управата за јавни приходи до граѓанинот доставува годишна даночна пријава (образец ДЛД-ГДП) за утврдување на годишен данок на личен доход, со однапред пополнети
+      податоци за доходот остварен во земјата и странство.
+      Во образецот ДЛД-ГДП пополнети се податоците за доходот кои граѓанинот ги остварил во текот на календарската година и тоа: доход од работа, доход од самостојна
+      дејност, доход од авторски и сродни права, доход од продажба на сопствени земјоделски производи, доход од права од индустриска сопственост, доход од закуп и подзакуп,
+      доход од капитал, капитални добивки, добивки од игри на среќа, доход од осигурување и друг доход.
+      Пополнетата годишна даночна пријава (образец ДЛД-ГДП) се доставува до граѓанинот најдоцна до 30 април во тековната година, за доходот што го остварил во претходната
+      година.
+      Должни сте годишната даночна пријава да ја потврдите или коригирате најдоцна до 31 мај во тековната година.
+      Доколку пред истекот на рокот на застареност, Управата за јавни приходи утврди непријавен или неточно пријавен исплатен или остварен доход, на даночниот
+      обврзник му доставува Службена исправка на потврдената годишна даночна пријава.
+      Доколку не ја потврдите или коригирате пополнетата годишна даночна пријава до 31 мај во тековната година, истата ќе се смета за ПОТВРДЕНА. Коригираната годишна
+      даночна пријава ја разгледува Управата за јавни приходи и во рок од 60 дена од поднесувањето на коригираната пријава ве известува повратно.
+    </p>
+    <h2>Остварен доход</h2>
+    <p>За секој одделен “вид на остварен доход” внесен е износот во соодветните колони според видот на доходот.
+      <ul >
+        <li>
+          <b>Бруто износ на доход</b> - во полето „Бруто износ на доход“ внесен е износот на бруто доходот за секој одделен вид на доход, односно збирот на нето доходот што сте го
+          примиле, зголемен за износот на данокот на личен доход и износот на искористените одбитоци во претходната година. По исклучок, кај доходот од реден број 2 (нето-
+          доход остварен од вршење на самостојна дејност) внесен е износот на нето-доходот утврден во полето 22 од Даночниот биланс (образец ДЛД-ДБ)
+        </li>
+        <li>
+          <b>Вкупен износ на платени придонеси / признаени трошоци</b> - внесен е износот на платените придонеси, како и трошоците што ја намалиле бруто-основата при
+            пресметување на аконтациите на данокот, а кои се утврдени во Законот за данокот на личен доход.
+            На реден број 1.1. и реден број 1.2., покрај платените придонеси за пензиско и инвалидско осигурување, здравствено осигурување, дополнителен придонес за
+            здравствено осигурување и вработување, како одбитоци внесен е износот и на пресметаните придонеси за кои со посебни прописи е предвидено ослободување од
+            плаќање, но кои ја намалиле основата при пресметувањето на аконтациите на данокот.
+            Кај доходот на реден број 2 (нето-доход остварен од вршење на самостојна дејност) како одбиток на нето-доходот е впишано само ослободувањето кое се пресметува од
+            нето-основата (член 28 ставови од (1) до (5) од Законот за данокот на личен доход или утврдено со друг закон), додека платените придонеси не се искажани како одбиток,
+            бидејќи се веќе вклучени како трошок при утврдувањето на нето доходот.
+            Кај доходот на реден број 3, 4, 5, 6, 8 и 11 како одбитоци се наведени пресметаните износи на трошоци кои во Законот за данокот на личен доход се утврдени во
+            определен процент од бруто-основата.
+          </li>
+          <li>
+            <b>Вкупен износ на пресметан ДЛД</b> - внесени се износите на пресметаниот данок на личен доход во текот на календарската година (даночниот период).
+          </li>
+          <li>
+            <b>Вкупен износ на платен ДЛД</b> - внесени се износите на платените аконтации на данокот на личен доход во текот на календарската година (даночниот период).
+          </li>
+      </ul>
+    </p>
+  
+    <h2>Износ на донирани финансиски средства</h2>
+    <p>Внесени се износите на вашите донирани финансиски средства во јавни дејности во претходната годината (даночен период).
+      Доколку износите не се совпаѓаат со средствата кои вие сте ги донирале, во полето за корекција внесете го вкупниот износ на донирани финансиски средства во јавни дејности
+      во претходната година.</p>
+    <h2>Утврден годишен данок на личен доход</h2>
+    <p>Врз основа на податоците за остварениот доход, Управата за јавни приходи изврши утврдување на годишниот данок на личен доход, пресметаниот годишен данок за плаќање
+      и разликата за доплата на данокот на личен доход за наведениот даночен период (календарска година).
+      Износот на повеќе платениот данок на личен доход можете да го оставите како аконтација за плаќање за нареден период или да го барате за враќање со запишување на
+      знак “x” пред полето од редниот број 12. Истовремено пополнете го и полето Трансакциска сметка и полето Назив на банка.</p>
+    <h2>Потврда на Годишна даночна пријава</h2>
+    <p>
+      <ul>
+        <li>Со означување на полето <b>ПОТВРДУВАМ</b> се согласувате и ја потврдувате точноста на податоците за доходот и утврдениот данок на личен доход кои се пополнети во
+          годишната даночна пријава од страна на Управата за јавни приходи.</li>
+          <li>Доколку го означите полето <b>КОРИГИРАМ</b>, задолжително во празните полиња (под податоците пополнети од Управата за јавни приходи) внесете ги точните износи за
+            соодветниот вид на доход, односно извршете корекција на пополнетите податоци за бруто износот на доходот кој сте го оствариле, износот на одбитоците и платените
+            аконтации на данокот на личен доход. <b>Напомена</b>: Не ги пополнувајте празните полиња кај видовите на доход за кои не вршите корекција на податоците пополнети од Управата за јавни приходи.</li>
+      </ul>
+      Потврдата или корекцијата на Годишната даночна пријава можете да ја извршите по пат на пренос на податоци во електронска форма, преку системот е-Персонален данок
+      <a href="https://e-pdd.ujp.gov.mk/" target="_blank">https://e-pdd.ujp.gov.mk</a> или во хартиена форма до Управата за јавни приходи.
+      При пополнување на Годишната даночна пријава во хартиена форма, податоците внесете ги читливо и целосно. Податоците внесете ги во точно означените полиња.
+      Не впишувајте ништо во полињата кои ги пополнува Управата за јавни приходи.
+    </p>
+    <h2>Потврдил/Коригирал</h2>
+    <ul>
+      <li>Задолжително внесете назив и ЕДБ на лицето кое ја потврдило/коригирало само во случај кога сте ополномоштиле правно лице или вршител на дејност
+        (сметководствено биро) во ваше име и за ваша сметка да ја потврди или коригира пријавата.
+        Ополномоштеното правно лице или вршител на дејност (сметководствено биро) кое ја потврдило/коригирало ДЛД-ГДП, задолжително ја потпишува на означеното
+        место.</li>
+        <li>Задолжително внесете име и презиме и ЕМБГ на составувачот само во случај кога сте ополномоштиле друго физичко лице во ваше име и за ваша сметка да ја потврди
+          или коригира пријавата.
+          Ополномоштеното физичко лице кое ја потврдило/коригирало ДЛД-ГДП, задолжително ја потпишува на означеното место.</li>
+    </ul>
+    <h2>Податоци за потписникот</h2>
+    <p>Задолжително внесете име и презиме, ЕМБГ и потпис на потписникот.<br/>
+      Доколку потписник е ополномоштено лице, задолжително внесете го својството на потписникот.</p>
+    <h2>Промена на адресни податоци</h2>
+    <p>Доколку вашите адресни и контакт податоци од пополнетата годишна даночна пријава не се точни, потребно е истите да ги ажурирате со повикување на Инфо центарот на УЈП
+      (0800 33 000 или 02/3253 200), или да доставите пријава УЈП-РДО до Управата за јавни приходи.</p>
+  </body>
+</html>
