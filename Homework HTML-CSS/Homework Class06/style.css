@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  margin: 5px 55px;
+  margin: 5px 20px;
   width: fit-content;
   height: 45px;
 }
@@ -36,12 +36,12 @@ body {
 .right-nav-links {
   position: absolute;
   top: 15px;
-  left: 500px;
+  right: 55px;
 }
 
 nav > ul > li {
   display: inline-block;
-  margin-right: 75px;
+  margin-right: 35px;
   font-size: 20px;
   list-style-type: none;
 }
@@ -53,26 +53,29 @@ a {
 
 .page-header {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
   font-size: 25px;
   text-transform: uppercase;
 }
 
 .main-content {
-  margin: 100px;
+  display: inline-block;
+  text-align: center;
+  margin: 40px auto;
+  padding-top: 50px;
+  width: 100%;
 }
 
 .section {
   display: inline-block;
-  width: 100%;
-  padding-top: 55px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .img-container {
   float: left;
   width: 700px;
   height: 600px;
-  margin: 80px 0 50px 150px;
 }
 
 .img-one {
@@ -87,7 +90,6 @@ a {
   height: 600px;
   background-color: white;
   border-radius: 15px;
-  margin-left: -75px;
   padding: 50px;
 }
 
