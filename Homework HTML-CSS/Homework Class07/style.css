@@ -1,0 +1,84 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(50, 60, 192), rgb(143, 161, 199));
+}
+.weather-widget {
+  background: linear-gradient(
+    rgb(98, 130, 233),
+    rgb(84, 149, 211),
+    rgba(236, 235, 235, 0.877)
+  );
+  padding: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 1px 1px 2px 3px rgba(102, 135, 207, 0.685);
+}
+
+.weather-icon {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 10px;
+}
+
+.header {
+  color: white;
+  font-size: 20px;
+}
+
+.cloudy-img {
+  width: 290px;
+  height: 250px;
+  align-self: flex-end;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 200px;
+  padding: 10px;
+}
+
+.location {
+  color: white;
+  font-size: 20px;
+}
+
+.weekday {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.temp-celsius {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.temp-farenheit {
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+  padding-top: 10px;
+}
