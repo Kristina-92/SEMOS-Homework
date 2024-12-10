@@ -1,0 +1,106 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto 80px;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+}
+
+.header {
+  box-shadow: 0 5px 8px rgba(19, 18, 18, 0.418);
+  font-size: 35px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px rgba(19, 18, 18, 0.418);
+  padding: 20px;
+  margin: 0 0 20px;
+  width: 30%;
+}
+
+.product-img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.product-name {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.product-description {
+  text-align: justify;
+}
+
+.product-price {
+  margin: auto 0 0;
+  align-self: flex-start;
+  font-size: 20px;
+}
+
+button {
+  margin: 10px 0 0;
+  border-radius: 8px;
+  background-color: rgba(228, 196, 83, 0.467);
+  align-self: flex-start;
+  padding: 5px;
+  border-color: rgba(228, 196, 83, 0.467);
+}
+
+button:hover {
+  background-color: rgba(228, 243, 67, 0.232);
+  border: 1px solid rgba(69, 68, 68, 0.716);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  box-shadow: 0 5px 8px rgba(19, 18, 18, 0.418);
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .product-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    width: 50%;
+  }
+
+  .product-img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+}
