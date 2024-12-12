@@ -57,7 +57,7 @@ body {
 
 .product-card:hover {
   border: 1px solid grey;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .product-img {
